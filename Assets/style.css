@@ -72,7 +72,7 @@ nav a:focus {
 */
 
 .hero {
-    background-image:url(Assets/IMG_502.JPG);
+    background-image:url(IMG_502.JPG);
     background-size: 100%;
     height: 600px;
     width: 100%;
@@ -154,7 +154,7 @@ nav a:focus {
 }
 
 .card {
-        background-image: url(Assets/IMG_505.JPG);
+        background-image: url(IMG_505.JPG);
         background-position: center;
         background-size: 90%;
         border: 10px solid #1a031d;
@@ -171,7 +171,7 @@ nav a:focus {
         transition: all 1s;
 }
 .card2 {
-    background-image: url(Assets/IMG_503.JPG);
+    background-image: url(IMG_503.JPG);
     background-position: center;
     background-size: 90%;
     border: 10px solid #1a031d;
@@ -188,7 +188,7 @@ nav a:focus {
     transition: all 1s;
 }
 .card#favorite {
-    background-image: url(Assets/IMG_504.JPG);
+    background-image: url(IMG_504.JPG);
     background-position: center;
     background-size: 90%;
     height: 30vh;
