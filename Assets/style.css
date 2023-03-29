@@ -117,6 +117,7 @@ nav a:focus {
 }
 
 .aboutme img {
+    background-image: url(IMG_500.JPG);
     border: 15px solid black;
     border-radius: 40px;
     border-style: ridge;
