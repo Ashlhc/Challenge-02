@@ -14,7 +14,7 @@
 }
 
 /**
-* TITLE
+* Header
 */
 
 header {
@@ -36,11 +36,12 @@ header .name h1 {
     font-weight: normal;
     font-style: oblique;
     text-align: center;
+    color:white;
     
 }
 
 /**
-* NAV
+* Nav
 */
 
 nav {
@@ -51,10 +52,14 @@ nav {
 nav a {
     color: #ffffff;
     font-size: 150%;
-    margin: 30px 5px 10px 0;
-    padding: 15px 15px 5px 15px;
+    margin: 25px 5px 10px 0;
+    padding: 20px 15px 5px 20px;
     text-decoration: none;
     border-bottom: 5px solid black;
+}
+
+nav a:hover {
+    color: #36b931;
 }
 
 nav a:focus {
@@ -62,24 +67,195 @@ nav a:focus {
     outline: 0;
 }
 
-nav a:hover {
-    color: #36b931;
-}
-
 /**
-* HERO IMAGE
+* Hero 
 */
 
 .hero {
-    background-image: url(https://loremflickr.com/1920/300/cat);
+    background-image:url(Assets/IMG_502.JPG);
     background-size: 100%;
-    height: 300px;
+    height: 600px;
     width: 100%;
 
 }
+.hero h2 {
+    margin:100px 0 0 1400px;
+    padding:60px 0 0 200px; 
+    background-color:#d484b0;
+    text-align:left;
+    color: white;
+}
 
 /**
-* SIDEBAR
+* About me 
+*/
+
+.aboutme {
+    background-color: var(--body-color);
+    display: flex;
+}
+
+.aboutme section {
+    line-height: 2;
+    margin: 3% 5%;
+    text-indent: 25px;
+}
+
+.aboutme p {
+    padding-top: 10px;
+    color: white;
+}
+
+/** 
+* About me figure and figcaption
+*/
+
+.aboutme figure {
+    margin: 5%;
+    text-align:center;
+    color: #ffffff;
+}
+
+.aboutme img {
+    border: 15px solid black;
+    border-radius: 40px;
+    border-style: ridge;
+    padding: 5px;
+    max-width: 400px;
+}
+
+.aboutme figcaption {
+    background-color: var(--body-color);
+    border: 5px solid black;
+    border-radius: 40px;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 5px 20px;
+    position: relative;
+    top: -20px;
+}
+
+/**
+* Work examples
+*/
+
+.mywork {
+    background: linear-gradient(#c949c2,#350b35);
+    display: flex;
+    width: 100%;
+}
+
+.workboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5% 8%;
+    width: 80%;
+}
+
+.card {
+        background-image: url(Assets/IMG_505.JPG);
+        background-position: center;
+        background-size: 90%;
+        border: 10px solid #1a031d;
+        border-radius: 40px;
+        border-style: ridge;
+        margin: 15px 0;
+        width: 45%;
+        min-height: 275px;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        line-height: 1;
+        transition: all 1s;
+}
+.card2 {
+    background-image: url(Assets/IMG_503.JPG);
+    background-position: center;
+    background-size: 90%;
+    border: 10px solid #1a031d;
+    border-radius: 40px;
+    border-style: ridge;
+    margin: 15px 0;
+    width: 45%;
+    min-height: 275px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 1;
+    transition: all 1s;
+}
+.card#favorite {
+    background-image: url(Assets/IMG_504.JPG);
+    background-position: center;
+    background-size: 90%;
+    height: 30vh;
+    min-height: 275px;
+    width: 95%;
+}
+
+.card section {
+    background-color: #1a031d;
+    bottom: 20px;
+    color: white;
+    line-height: 1.1;
+    margin: 0 auto 0 0;
+    padding: 2px 25px 5px 5px;
+    position: relative;
+}
+.card2 section {
+    background-color: #1a031d;
+    bottom: 20px;
+    color: white;
+    line-height: 1.1;
+    margin: 0 auto 0 0;
+    padding: 2px 25px 5px 5px;
+    position: relative;
+}
+
+.card h3{
+    font-size: 180%;
+}
+.card2 h3{
+    font-size: 180%;
+}
+.card h4 {
+    font-size: 200%;
+    background-position: right bottom;
+}
+.card2 h4 {
+    font-size: 200%;
+    background-position: right bottom;
+}
+.card p {
+    font-style: oblique;
+}
+.card2 p {
+    font-style: oblique;
+}
+.card:focus {
+    outline: 0;
+    border-color: #44ce56;
+}
+
+.card2:focus {
+    outline: 0;
+    border-color: #44ce56;
+}
+.card:hover {
+    transition: all 1s;
+    transform: scale(1.2,1.2);
+    background-size: 75%;
+}
+.card2:hover {
+    transition: all 1s;
+    transform: scale(1.2,1.2);
+    background-size: 75%;
+}
+/**
+* Side elements
 */
 
 .side {
@@ -97,139 +273,14 @@ nav a:hover {
     position: sticky;
     top: 20px;
     border-right: 5px solid #000000;
-    padding: 0px 0px 0px 200px;
-    font-size: 25px;
+    padding: 0px 0px 0px 60px;
+    font-size: 40px;
+    min-height: 60%;
     
 }
 
 /**
-* ABOUT ME
-*/
-
-.aboutme {
-    background-color: var(--body-color);
-    display: flex;
-}
-
-.aboutme section {
-    line-height: 1.6;
-    margin: 2% 3%;
-    text-indent: 20px;
-}
-
-.aboutme p {
-    padding-top: 10px;
-}
-
-/** 
-* ABOUT ME - FIGURE AND CAPTION
-*/
-
-.aboutme figure {
-    margin: 1%;
-    text-align:center;
-    color: #ffffff;
-}
-
-.aboutme img {
-    border: 10px solid black;
-    border-radius: 40px;
-    border-style: ridge;
-    padding: 5px;
-}
-
-.aboutme figcaption {
-    background-color: var(--body-color);
-    border: 5px solid black;
-    border-radius: 40px;
-    margin: 0 auto;
-    max-width: 80%;
-    padding: 5px 20px;
-    position: relative;
-    top: -20px;
-}
-
-/**
-* WORK EXAMPLES
-*/
-
-.mywork {
-    background: linear-gradient(#c949c2,#350b35);
-    display: flex;
-}
-
-.workboxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 5% 8%;
-    width: 80%;
-}
-
-.card {
-    background-image: url(https://loremflickr.com/700/350/cat);
-    background-position: center;
-    background-size: 90%;
-    border: 10px solid #1a031d;
-    border-radius: 40px;
-    border-style: ridge;
-    margin: 15px 0;
-    width: 45%;
-    min-height: 275px;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    line-height: 1;
-    transition: all 1s;
-}
-
-.card#favorite {
-    background-image: url(https://loremflickr.com/1920/700/cat);
-    background-position: center;
-    background-size: 90%;
-    height: 30vh;
-    min-height: 275px;
-    width: 95%;
-}
-
-.card section {
-    background-color: #1a031d;
-    bottom: 20px;
-    color: white;
-    line-height: 1.1;
-    margin: 0 auto 0 0;
-    padding: 2px 25px 5px 5px;
-    position: relative;
-}
-
-.card h3{
-    font-size: 180%;
-}
-.card h4 {
-    font-size: 200%;
-    background-position: right bottom;
-}
-.card p {
-    font-style: oblique;
-}
-
-.card:focus {
-    outline: 0;
-    border-color: #44ce56;
-}
-
-.card:hover {
-    transition: all 1s;
-    transform: scale(1.2,1.2);
-    background-size: 75%;
-}
-
-/**
-* CONTACT ME
-* Operation is finished, waiting for the style pass.
-*
-* The Contact Me sidebar can scroll, in case I ever want to add a form or something.
+* Contact me
 */
 
 .contactme {
@@ -237,6 +288,7 @@ nav a:hover {
     border-radius: 3px;
     border-color: #160416;
     display: flex;
+    width: 100%;
 }
 
 .contactme section {
@@ -257,29 +309,28 @@ nav a:hover {
 }
 
 /**
-* FOOTER
-* Very basic footer. Background is currently an inversion of the header
-* background, until a style pass.
+* Footer
 */
 
 footer {
     height: 100px;
     background: linear-gradient(#350b35,#0a010a);
-    text-align: center;
     border-style: ridge;
     border: 10px;
     border-color: #160416;
+    width: 100%;
 }
 
 footer p {
     font-style:oblique;
     font-size: 120%;
+    text-align: center;
     padding: 40px 0;
     color: #ffffff;
 }
 
 /**
-* Tablet Version - mostly done - need to ensure later additions work
+* Tablet Version
 */
 
 @media screen and (max-width:992px) {
@@ -303,7 +354,7 @@ footer p {
 }
 
 /**
-* Mobile Version - mostly done, need to make sure contact works
+* Mobile Version
 */
 
 @media screen and (max-width:768px) {
